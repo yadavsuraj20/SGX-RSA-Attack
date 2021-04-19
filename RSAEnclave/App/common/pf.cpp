@@ -14,7 +14,7 @@ void fault_handler_wrapper (int signo, siginfo_t * si, void  *ctx)
   {
     case SIGSEGV:
       base_adrs = si->si_addr;
-      info("Caught page fault (base address=%p)", base_adrs);
+      // info("Caught page fault (base address=%p)", base_adrs);
       break;
 
     default:

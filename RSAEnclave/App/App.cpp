@@ -39,27 +39,28 @@
 # include <pwd.h>
 # define MAX_PATH FILENAME_MAX
 
+#include <sys/mman.h>
+
 #include "sgx_urts.h"
 #include "App.h"
 #include "Enclave_u.h"
 
 // sgxstep headers
-// extern "C" {
+extern "C" {
 // #include "libsgxstep/apic.h"
 // #include "libsgxstep/cpu.h"
 // #include "libsgxstep/pt.h"
 // #include "libsgxstep/sched.h"
-// #include "libsgxstep/enclave.h"
+#include "libsgxstep/enclave.h"
 // #include "libsgxstep/debug.h"
 // #include "libsgxstep/idt.h"
 // #include "libsgxstep/spy.h"
 // #include "libsgxstep/config.h"
-// }
+}
 
 #include "common/debug.h"
 #include "common/pf.h"
 #include "common/cacheutils.h"
-#include <sys/mman.h>
 
 /* Global EID shared by multiple threads */
 sgx_enclave_id_t global_eid = 0;
@@ -72,11 +73,13 @@ typedef struct _sgx_errlist_t {
 
 struct sigaction act; // sigaction action variable
 
-/* Configuring required page-table info */
-static uint64_t gcd_page_offset = 0x39240;
-static uint64_t sub_page_offset = 0x53a50;
-static uint64_t rShift1_page_offset = 0x357c50;
-// static uint64_t modInversePageOffset = 0x596e0;
+uint64_t enclave_base_addr = 0x7f0985000000;
+
+// /* Configuring required page-table info */
+static uint64_t gcd_page_offset = 0x58dd0;
+static uint64_t sub_page_offset = 0x54bd0;
+static uint64_t rshift1_page_offset = 0x3ded0;
+// // static uint64_t modInversePageOffset = 0x596e0;
 
 void *gcd_page = NULL, *sub_page = NULL, *rshift1_page = NULL;
 
@@ -208,26 +211,78 @@ void ocall_print_string(const char *str)
 
 }
 
-void* get_base_addr(void* addr){
-    return (void*) ((uint64_t)addr & 0xfffffffffffff000);
+FILE *public_key_file = NULL, *private_key_file = NULL;
+
+void ocall_print_key(char *key, char keytype){
+    if(keytype == 'n' || keytype == 'e'){
+        fprintf(public_key_file, "%c: 0x%s\n", keytype, key);
+    }
+    else{
+        fprintf(private_key_file, "%c: 0x%s\n", keytype, key);
+    }
 }
+
+void* get_base_addr(uint64_t addr){
+    return (void*) (addr & 0xfffffffffffff000);
+}
+
+// ---------------------------------------------------------------
+void* prev_page = NULL;
+
+FILE *fp = fopen("page_faults.txt", "w+");
 
 void pagefault_handler(void* base_addr){
-    printf("pagefault_handler triggered\n");
+    // printf("pagefault_handler triggered\n");
 
     if(base_addr == gcd_page){
-        printf("gcd_page\n");
+        // printf("gcd_page\n");
+        fprintf(fp, "g\n");
         mprotect(base_addr, 0x1000, PROT_EXEC);
+
+        if(prev_page == NULL){
+            mprotect(sub_page, 0x1000, PROT_NONE);
+            mprotect(rshift1_page, 0x1000, PROT_NONE);
+        }
+        else{
+            mprotect(prev_page, 0x1000, PROT_NONE);
+        }
     }
+    else if(base_addr == sub_page){
+        fprintf(fp, "s ");
+        mprotect(base_addr, 0x1000, PROT_EXEC);
+        
+        mprotect(prev_page, 0x1000, PROT_NONE);
+    }
+    else if(base_addr == rshift1_page){
+        fprintf(fp, "r ");
+        mprotect(base_addr, 0x1000, PROT_EXEC);
+        
+        mprotect(prev_page, 0x1000, PROT_NONE);
+    }
+    else{
+        printf("Unknown page fault\n");
+    } 
+
+    prev_page = base_addr;
     return;
 }
+
+// ---------------------------------------------------------------
 
 
 /* Application entry */
 int SGX_CDECL main(int argc, char *argv[])
 {
-    (void)(argc);
-    (void)(argv);
+    // (void)(argc);
+    // (void)(argv);
+
+    if(argc<2){
+        printf("ERROR Usage: ./app <keysize>\n");
+        exit(1);
+    }
+    int keysize = atoi(argv[1]);
+    // printf("%d\n", keysize);
+    // exit(1);
 
 
     /* Initialize the enclave */
@@ -263,39 +318,38 @@ int SGX_CDECL main(int argc, char *argv[])
     // }
 
     /* Setting up sgx-step */
-    // register_enclave_info();
+    register_enclave_info();
     // print_enclave_info();
     // printf("\n");
-    // uint64_t enclave_base_addr = (uint64_t) get_enclave_base();
+    uint64_t enclave_base_addr = (uint64_t) get_enclave_base();
 
-    // gcd_page = (void *)(enclave_base_addr | gcd_page_offset);
+    public_key_file = fopen("public_key.txt", "w+");
+    private_key_file = fopen("private_key.txt", "w+");
 
-    // printf("gcd_page 0x%lx\n", gcd_page);
+    gcd_page = get_base_addr(enclave_base_addr | gcd_page_offset);
+    sub_page = get_base_addr(enclave_base_addr | sub_page_offset);
+    rshift1_page = get_base_addr(enclave_base_addr | rshift1_page_offset);
+
+    // printf("%lx %lx\n", enclave_base_addr, gcd_page_offset);
+
+    printf("gcd: %lx, sub: %lx, rshift1: %lx\n", gcd_page, sub_page, rshift1_page);
+
+    // printf("My gcd_page 0x%lx\n", gcd_page);
 
     // void* sq_pt;
 
-    ecall_get_gcd_addr(global_eid, &gcd_page);
-    gcd_page = get_base_addr(gcd_page);
-    printf("gcd_page 0x%lx\n", gcd_page);
+    // ecall_get_gcd_addr(global_eid, &gcd_page);
+    // sub_page = (void*)((uint64_t)gcd_page+(0x54bd0-0x39240));
+    // rshift1_page = (void*)((uint64_t)gcd_page+(0x3def0-0x39240));
+    // printf("Actual gcd_page 0x%lx\n", gcd_page);
+    // gcd_page = get_base_addr((uint64_t)gcd_page);
+    // printf("Actual gcd_page 0x%lx\n", gcd_page);
+
+    // gcd_page
 
     mprotect(gcd_page, 0x1000, PROT_NONE);
 
-    // int x = 2, y = 4;
-    // int result;
-    // sgx_status_t status = ecall_sum_ints(global_eid, &result, x, y);
-
-    // if (status != SGX_SUCCESS)
-	// {
-	// 	printf("Ecall didn't return successfully. Terminating!\n");
-    //     sgx_destroy_enclave(global_eid);
-    //     return 0;
-    // }
-
-    // printf("Ecall returned successfully.\n");
-
-    // printf("Result: %d\n", result);
-
-    ecall_generate_RSA_key(global_eid);
+    ecall_generate_RSA_key(global_eid, keysize);
 
     // ecall_print_something(global_eid);
 

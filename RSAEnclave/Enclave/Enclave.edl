@@ -53,8 +53,7 @@ enclave {
     trusted {
         public int ecall_sum_ints(int x, int y);
         public void ecall_print_something();
-        public void ecall_generate_RSA_key();
-        public void* ecall_get_gcd_addr();
+        public void ecall_generate_RSA_key(int keysize);
     };
 
     /* 
@@ -64,6 +63,7 @@ enclave {
      */
     untrusted {
         void ocall_print_string([in, string] const char *str);
+        void ocall_print_key([in, string] char *str, char keytype);
     };
 
 };

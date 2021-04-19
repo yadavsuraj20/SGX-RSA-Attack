@@ -43,7 +43,7 @@ int printf(const char* fmt, ...);
 int ecall_sum_ints(int x, int y);
 void ecall_print_something();
 
-void ecall_generate_RSA_key(void);
+void ecall_generate_RSA_key(int keysize);
 
 #if defined(__cplusplus)
 }

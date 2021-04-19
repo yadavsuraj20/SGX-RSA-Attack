@@ -62,7 +62,7 @@ void ecall_print_something(){
     printf("Something!\n");
 }
 
-void ecall_generate_RSA_key(){
+void ecall_generate_RSA_key(int keysize){
     printf("Generating RSA key...\n");
     
     // generate RSA key using OpenSSL
@@ -77,21 +77,36 @@ void ecall_generate_RSA_key(){
     }
 
     r = RSA_new();
-    if(!RSA_generate_key_ex(r, 2048, bn_exp, NULL)){
+    if(!RSA_generate_key_ex(r, keysize, bn_exp, NULL)){
         // free and exit
     }
 
     RSA_get0_key(r, &bnn, &bne, &bnd);
     RSA_get0_factors(r, &bnp, &bnq);
 
+    char *tmpn = BN_bn2hex(bnn);
+	ocall_print_key(tmpn,'n');
+
+    char *tmpe = BN_bn2hex(bne);
+	ocall_print_key(tmpe,'e');
+
+    char *tmpp = BN_bn2hex(bnp);
+	ocall_print_key(tmpp,'p');
+
+    char *tmpq = BN_bn2hex(bnq);
+	ocall_print_key(tmpq,'q');
+
+    char *tmpd = BN_bn2hex(bnd);
+	ocall_print_key(tmpd,'d');
+
     // BN_gcd()
 
 }
 
-void* ecall_get_gcd_addr(void)
-{
-    return (void*)BN_gcd;
-}
+// void* ecall_get_gcd_addr(void){
+//     return (void*)BN_gcd;
+// }
 
 // https://www.dynamsoft.com/codepool/how-to-use-openssl-generate-rsa-keys-cc.html
 // https://www.openssl.org/docs/man1.1.1/man3/RSA_get0_key.html
+// https://www.openssl.org/docs/man1.1.0/man3/BN_bn2hex.html
