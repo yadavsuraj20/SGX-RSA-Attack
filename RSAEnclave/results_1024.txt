@@ -1,0 +1,803 @@
+make[1]: Entering directory '/home/surajyadav/Documents/RnD Project - Security/SGX/SGX-RSA-Attack/RSAEnclave'
+The project has been built in debug hardware mode.
+make[1]: Leaving directory '/home/surajyadav/Documents/RnD Project - Security/SGX/SGX-RSA-Attack/RSAEnclave'
+Run 1
+[idt.c] locking IRQ handler pages 0x558bb3b44000/0x558bb3b4c000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f0011058000, sub: 7f0011054000, rshift1: 7f001103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 2
+[idt.c] locking IRQ handler pages 0x55a750278000/0x55a750280000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fefa6058000, sub: 7fefa6054000, rshift1: 7fefa603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 3
+[idt.c] locking IRQ handler pages 0x55648ab7c000/0x55648ab84000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fc623058000, sub: 7fc623054000, rshift1: 7fc62303d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 4
+[idt.c] locking IRQ handler pages 0x5593e49fd000/0x5593e4a05000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f2060058000, sub: 7f2060054000, rshift1: 7f206003d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 5
+[idt.c] locking IRQ handler pages 0x55c31ce24000/0x55c31ce2c000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f176d058000, sub: 7f176d054000, rshift1: 7f176d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 6
+[idt.c] locking IRQ handler pages 0x55d88753d000/0x55d887545000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f5084058000, sub: 7f5084054000, rshift1: 7f508403d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 7
+[idt.c] locking IRQ handler pages 0x555af37e7000/0x555af37ef000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f6941058000, sub: 7f6941054000, rshift1: 7f694103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 8
+[idt.c] locking IRQ handler pages 0x562046986000/0x56204698e000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f4be4058000, sub: 7f4be4054000, rshift1: 7f4be403d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 9
+[idt.c] locking IRQ handler pages 0x55f572476000/0x55f57247e000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fa6d9058000, sub: 7fa6d9054000, rshift1: 7fa6d903d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 10
+[idt.c] locking IRQ handler pages 0x55e5cb4a8000/0x55e5cb4b0000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f2566058000, sub: 7f2566054000, rshift1: 7f256603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 11
+[idt.c] locking IRQ handler pages 0x55f4d79f2000/0x55f4d79fa000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fd521058000, sub: 7fd521054000, rshift1: 7fd52103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 12
+[idt.c] locking IRQ handler pages 0x55fc91b1e000/0x55fc91b26000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f4d0f058000, sub: 7f4d0f054000, rshift1: 7f4d0f03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 13
+[idt.c] locking IRQ handler pages 0x55f9de778000/0x55f9de780000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f50eb058000, sub: 7f50eb054000, rshift1: 7f50eb03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 14
+[idt.c] locking IRQ handler pages 0x561504086000/0x56150408e000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f3a2f058000, sub: 7f3a2f054000, rshift1: 7f3a2f03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 15
+[idt.c] locking IRQ handler pages 0x564a4153a000/0x564a41542000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f575d058000, sub: 7f575d054000, rshift1: 7f575d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 16
+[idt.c] locking IRQ handler pages 0x55e598e85000/0x55e598e8d000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7ff59e058000, sub: 7ff59e054000, rshift1: 7ff59e03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 17
+[idt.c] locking IRQ handler pages 0x556941ab1000/0x556941ab9000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f6da6058000, sub: 7f6da6054000, rshift1: 7f6da603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 18
+[idt.c] locking IRQ handler pages 0x5565a97f7000/0x5565a97ff000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7ff887058000, sub: 7ff887054000, rshift1: 7ff88703d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 19
+[idt.c] locking IRQ handler pages 0x55f1e1548000/0x55f1e1550000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f943f058000, sub: 7f943f054000, rshift1: 7f943f03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 20
+[idt.c] locking IRQ handler pages 0x55da91dad000/0x55da91db5000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f5d47058000, sub: 7f5d47054000, rshift1: 7f5d4703d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 21
+[idt.c] locking IRQ handler pages 0x558d52214000/0x558d5221c000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fb5cb058000, sub: 7fb5cb054000, rshift1: 7fb5cb03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 22
+[idt.c] locking IRQ handler pages 0x55e201771000/0x55e201779000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f300b058000, sub: 7f300b054000, rshift1: 7f300b03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 23
+[idt.c] locking IRQ handler pages 0x56497bc62000/0x56497bc6a000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9602058000, sub: 7f9602054000, rshift1: 7f960203d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 24
+[idt.c] locking IRQ handler pages 0x5599c4a78000/0x5599c4a80000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f0766058000, sub: 7f0766054000, rshift1: 7f076603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 25
+[idt.c] locking IRQ handler pages 0x5566c1c98000/0x5566c1ca0000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9f5d058000, sub: 7f9f5d054000, rshift1: 7f9f5d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 26
+[idt.c] locking IRQ handler pages 0x5640043ec000/0x5640043f4000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f5a42058000, sub: 7f5a42054000, rshift1: 7f5a4203d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 27
+[idt.c] locking IRQ handler pages 0x55e970368000/0x55e970370000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f0f8f058000, sub: 7f0f8f054000, rshift1: 7f0f8f03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 28
+[idt.c] locking IRQ handler pages 0x559c30445000/0x559c3044d000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9eb1058000, sub: 7f9eb1054000, rshift1: 7f9eb103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 29
+[idt.c] locking IRQ handler pages 0x5570c5dca000/0x5570c5dd2000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fdaa9058000, sub: 7fdaa9054000, rshift1: 7fdaa903d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 30
+[idt.c] locking IRQ handler pages 0x55dfde4a4000/0x55dfde4ac000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7efc7b058000, sub: 7efc7b054000, rshift1: 7efc7b03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 31
+[idt.c] locking IRQ handler pages 0x563a0d6e3000/0x563a0d6eb000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fa121058000, sub: 7fa121054000, rshift1: 7fa12103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 32
+[idt.c] locking IRQ handler pages 0x556a55daa000/0x556a55db2000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f25ce058000, sub: 7f25ce054000, rshift1: 7f25ce03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 33
+[idt.c] locking IRQ handler pages 0x5605f35f4000/0x5605f35fc000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f6f4d058000, sub: 7f6f4d054000, rshift1: 7f6f4d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 34
+[idt.c] locking IRQ handler pages 0x561bdd40b000/0x561bdd413000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fc095058000, sub: 7fc095054000, rshift1: 7fc09503d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 35
+[idt.c] locking IRQ handler pages 0x55b12914f000/0x55b129157000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fee6e058000, sub: 7fee6e054000, rshift1: 7fee6e03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 36
+[idt.c] locking IRQ handler pages 0x55b19856b000/0x55b198573000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f7bb1058000, sub: 7f7bb1054000, rshift1: 7f7bb103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 37
+[idt.c] locking IRQ handler pages 0x565218f59000/0x565218f61000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7ff29d058000, sub: 7ff29d054000, rshift1: 7ff29d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 38
+[idt.c] locking IRQ handler pages 0x5606f91a8000/0x5606f91b0000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f1dda058000, sub: 7f1dda054000, rshift1: 7f1dda03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 39
+[idt.c] locking IRQ handler pages 0x55f0d7904000/0x55f0d790c000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7faaf5058000, sub: 7faaf5054000, rshift1: 7faaf503d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 40
+[idt.c] locking IRQ handler pages 0x55f56c693000/0x55f56c69b000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fb9a9058000, sub: 7fb9a9054000, rshift1: 7fb9a903d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 41
+[idt.c] locking IRQ handler pages 0x558624df8000/0x558624e00000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f465b058000, sub: 7f465b054000, rshift1: 7f465b03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 42
+[idt.c] locking IRQ handler pages 0x55d5940b9000/0x55d5940c1000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f2174058000, sub: 7f2174054000, rshift1: 7f217403d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 43
+[idt.c] locking IRQ handler pages 0x5636c5876000/0x5636c587e000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fa6df058000, sub: 7fa6df054000, rshift1: 7fa6df03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 44
+[idt.c] locking IRQ handler pages 0x555b447ab000/0x555b447b3000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f00ac058000, sub: 7f00ac054000, rshift1: 7f00ac03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 45
+[idt.c] locking IRQ handler pages 0x55b062ec7000/0x55b062ecf000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fce60058000, sub: 7fce60054000, rshift1: 7fce6003d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 46
+[idt.c] locking IRQ handler pages 0x55b44119c000/0x55b4411a4000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f6c2d058000, sub: 7f6c2d054000, rshift1: 7f6c2d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 47
+[idt.c] locking IRQ handler pages 0x55b3fd1a8000/0x55b3fd1b0000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fcf0b058000, sub: 7fcf0b054000, rshift1: 7fcf0b03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 48
+[idt.c] locking IRQ handler pages 0x560a34380000/0x560a34388000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f73c4058000, sub: 7f73c4054000, rshift1: 7f73c403d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 49
+[idt.c] locking IRQ handler pages 0x561484477000/0x56148447f000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fb5f3058000, sub: 7fb5f3054000, rshift1: 7fb5f303d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 50
+[idt.c] locking IRQ handler pages 0x559a9ef8b000/0x559a9ef93000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f73d9058000, sub: 7f73d9054000, rshift1: 7f73d903d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 51
+[idt.c] locking IRQ handler pages 0x563b6a6f7000/0x563b6a6ff000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7ff26b058000, sub: 7ff26b054000, rshift1: 7ff26b03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 52
+[idt.c] locking IRQ handler pages 0x55f2f11a2000/0x55f2f11aa000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7faa2d058000, sub: 7faa2d054000, rshift1: 7faa2d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 53
+[idt.c] locking IRQ handler pages 0x55a0b460b000/0x55a0b4613000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fb223058000, sub: 7fb223054000, rshift1: 7fb22303d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 54
+[idt.c] locking IRQ handler pages 0x56145cc50000/0x56145cc58000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f89da058000, sub: 7f89da054000, rshift1: 7f89da03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 55
+[idt.c] locking IRQ handler pages 0x55aeaaee3000/0x55aeaaeeb000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fe3a6058000, sub: 7fe3a6054000, rshift1: 7fe3a603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 56
+[idt.c] locking IRQ handler pages 0x559e6dbc6000/0x559e6dbce000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fa193058000, sub: 7fa193054000, rshift1: 7fa19303d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 57
+[idt.c] locking IRQ handler pages 0x555e88e80000/0x555e88e88000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f54a8058000, sub: 7f54a8054000, rshift1: 7f54a803d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 58
+[idt.c] locking IRQ handler pages 0x558ebb847000/0x558ebb84f000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9d3d058000, sub: 7f9d3d054000, rshift1: 7f9d3d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 59
+[idt.c] locking IRQ handler pages 0x55f240dd1000/0x55f240dd9000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fabdc058000, sub: 7fabdc054000, rshift1: 7fabdc03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 60
+[idt.c] locking IRQ handler pages 0x555aaafdc000/0x555aaafe4000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fc469058000, sub: 7fc469054000, rshift1: 7fc46903d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 61
+[idt.c] locking IRQ handler pages 0x55c912e25000/0x55c912e2d000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f89ee058000, sub: 7f89ee054000, rshift1: 7f89ee03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 62
+[idt.c] locking IRQ handler pages 0x55dd22a46000/0x55dd22a4e000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f1b7f058000, sub: 7f1b7f054000, rshift1: 7f1b7f03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 63
+[idt.c] locking IRQ handler pages 0x559cb8610000/0x559cb8618000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f0c2c058000, sub: 7f0c2c054000, rshift1: 7f0c2c03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 64
+[idt.c] locking IRQ handler pages 0x557b848cc000/0x557b848d4000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f7b37058000, sub: 7f7b37054000, rshift1: 7f7b3703d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 65
+[idt.c] locking IRQ handler pages 0x5651bc441000/0x5651bc449000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f06f9058000, sub: 7f06f9054000, rshift1: 7f06f903d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 66
+[idt.c] locking IRQ handler pages 0x55f758b14000/0x55f758b1c000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fc53a058000, sub: 7fc53a054000, rshift1: 7fc53a03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 67
+[idt.c] locking IRQ handler pages 0x55bb2b94b000/0x55bb2b953000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fe5e7058000, sub: 7fe5e7054000, rshift1: 7fe5e703d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 68
+[idt.c] locking IRQ handler pages 0x556cf56a0000/0x556cf56a8000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9603058000, sub: 7f9603054000, rshift1: 7f960303d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 69
+[idt.c] locking IRQ handler pages 0x560c53610000/0x560c53618000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9846058000, sub: 7f9846054000, rshift1: 7f984603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 70
+[idt.c] locking IRQ handler pages 0x55eec771a000/0x55eec7722000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fded1058000, sub: 7fded1054000, rshift1: 7fded103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 71
+[idt.c] locking IRQ handler pages 0x55fab309d000/0x55fab30a5000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f3d61058000, sub: 7f3d61054000, rshift1: 7f3d6103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 72
+[idt.c] locking IRQ handler pages 0x5572987e4000/0x5572987ec000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fc2c4058000, sub: 7fc2c4054000, rshift1: 7fc2c403d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 73
+[idt.c] locking IRQ handler pages 0x55dc30945000/0x55dc3094d000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7ff17a058000, sub: 7ff17a054000, rshift1: 7ff17a03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 74
+[idt.c] locking IRQ handler pages 0x55ad053e5000/0x55ad053ed000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f4022058000, sub: 7f4022054000, rshift1: 7f402203d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 75
+[idt.c] locking IRQ handler pages 0x557f20864000/0x557f2086c000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f3623058000, sub: 7f3623054000, rshift1: 7f362303d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 76
+[idt.c] locking IRQ handler pages 0x55ae5e6bd000/0x55ae5e6c5000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fe52a058000, sub: 7fe52a054000, rshift1: 7fe52a03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 77
+[idt.c] locking IRQ handler pages 0x56453df2b000/0x56453df33000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f3659058000, sub: 7f3659054000, rshift1: 7f365903d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 78
+[idt.c] locking IRQ handler pages 0x55f33d621000/0x55f33d629000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f216c058000, sub: 7f216c054000, rshift1: 7f216c03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 17
+Run 79
+[idt.c] locking IRQ handler pages 0x56027265b000/0x560272663000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9df9058000, sub: 7f9df9054000, rshift1: 7f9df903d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 80
+[idt.c] locking IRQ handler pages 0x5561a467c000/0x5561a4684000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fd675058000, sub: 7fd675054000, rshift1: 7fd67503d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 81
+[idt.c] locking IRQ handler pages 0x5580c930f000/0x5580c9317000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9c46058000, sub: 7f9c46054000, rshift1: 7f9c4603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 82
+[idt.c] locking IRQ handler pages 0x558c34a48000/0x558c34a50000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f5288058000, sub: 7f5288054000, rshift1: 7f528803d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 83
+[idt.c] locking IRQ handler pages 0x55872a96c000/0x55872a974000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7ffba2058000, sub: 7ffba2054000, rshift1: 7ffba203d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 84
+[idt.c] locking IRQ handler pages 0x56208b835000/0x56208b83d000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7ff58c058000, sub: 7ff58c054000, rshift1: 7ff58c03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 85
+[idt.c] locking IRQ handler pages 0x55d5fae8c000/0x55d5fae94000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fbf9b058000, sub: 7fbf9b054000, rshift1: 7fbf9b03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 86
+[idt.c] locking IRQ handler pages 0x561f01400000/0x561f01408000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f7b07058000, sub: 7f7b07054000, rshift1: 7f7b0703d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 87
+[idt.c] locking IRQ handler pages 0x55ae735b0000/0x55ae735b8000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f9096058000, sub: 7f9096054000, rshift1: 7f909603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 88
+[idt.c] locking IRQ handler pages 0x55ef856f9000/0x55ef85701000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f39fe058000, sub: 7f39fe054000, rshift1: 7f39fe03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 89
+[idt.c] locking IRQ handler pages 0x55641e91b000/0x55641e923000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f00d3058000, sub: 7f00d3054000, rshift1: 7f00d303d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 90
+[idt.c] locking IRQ handler pages 0x55c664d37000/0x55c664d3f000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f6c4b058000, sub: 7f6c4b054000, rshift1: 7f6c4b03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 91
+[idt.c] locking IRQ handler pages 0x563fa8e29000/0x563fa8e31000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f8fc0058000, sub: 7f8fc0054000, rshift1: 7f8fc003d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 92
+[idt.c] locking IRQ handler pages 0x5654c6e92000/0x5654c6e9a000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fa383058000, sub: 7fa383054000, rshift1: 7fa38303d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 93
+[idt.c] locking IRQ handler pages 0x55f57ab28000/0x55f57ab30000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fa547058000, sub: 7fa547054000, rshift1: 7fa54703d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 16
+Run 94
+[idt.c] locking IRQ handler pages 0x5574ad085000/0x5574ad08d000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f6441058000, sub: 7f6441054000, rshift1: 7f644103d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 95
+[idt.c] locking IRQ handler pages 0x561641443000/0x56164144b000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fb7bc058000, sub: 7fb7bc054000, rshift1: 7fb7bc03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 96
+[idt.c] locking IRQ handler pages 0x55ec82c18000/0x55ec82c20000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7eff3d058000, sub: 7eff3d054000, rshift1: 7eff3d03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 97
+[idt.c] locking IRQ handler pages 0x55be139eb000/0x55be139f3000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f890f058000, sub: 7f890f054000, rshift1: 7f890f03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 98
+[idt.c] locking IRQ handler pages 0x5599dcd92000/0x5599dcd9a000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7fd8a6058000, sub: 7fd8a6054000, rshift1: 7fd8a603d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 99
+[idt.c] locking IRQ handler pages 0x5587ed345000/0x5587ed34d000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f3f3a058000, sub: 7f3f3a054000, rshift1: 7f3f3a03d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
+Run 100
+[idt.c] locking IRQ handler pages 0x559cfd313000/0x559cfd31b000
+registering fault handler..
+[pt.c] /dev/sgx-step opened!
+gcd: 7f4174058000, sub: 7f4174054000, rshift1: 7f417403d000
+Generating RSA key...
+RSAEnclave worked successfully.
+Recovered key with start: 15
